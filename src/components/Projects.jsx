@@ -9,24 +9,24 @@ const Projects = () => {
       title: 'SkillPointAverage',
       description: 'A web-based platform that enables users to manage and evaluate their technical skills in a structured manner.',
       image: '/api/placeholder/600/400',
-      tags: ['React', 'Node.js', 'OpenAI API', 'MongoDB'],
-      github: '#',
+      tags: ['React', 'Node.js', 'Express.js', 'MongoDB'],
+      github: 'https://github.com/AfselKhanM/SkillPointAverage',
+      demo: 'https://skill-point-average.vercel.app/'
+    },
+    {
+      title: 'IntruderX',
+      description: 'IoT-based smart home intruder detection and alert system',
+      image: '/api/placeholder/600/400',
+      tags: ['Arduino', 'NodeMCU', 'PIR sensor', 'Telegram bot'],
+      github: 'https://github.com/AfselKhanM/IntruderX',
       demo: '#'
     },
     {
-      title: 'IoT Weather Station',
-      description: 'Real-time weather monitoring system using ESP32, DHT11 sensors, and a web dashboard for data visualization.',
+      title: 'CarRace-AI',
+      description: 'A real-time, 2D autonomous car racing simulation built entirely with native web technologies.',
       image: '/api/placeholder/600/400',
-      tags: ['C++', 'React', 'Express', 'WebSockets'],
-      github: '#',
-      demo: '#'
-    },
-    {
-      title: 'E-Commerce Microservices',
-      description: 'A scalable e-commerce backend built with a microservices architecture, featuring Docker containerization.',
-      image: '/api/placeholder/600/400',
-      tags: ['Java', 'Spring Boot', 'Docker', 'PostgreSQL'],
-      github: '#',
+      tags: ['HTML5', 'JavaScript', 'Canvas', 'CSS'],
+      github: 'https://github.com/AfselKhanM/CarRace-AI',
       demo: '#'
     }
   ];
