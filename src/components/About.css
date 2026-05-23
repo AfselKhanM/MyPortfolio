@@ -1,0 +1,140 @@
+.about-section {
+  background-color: var(--section-alt-bg);
+}
+
+.about-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+  margin-top: 3rem;
+}
+
+.about-text {
+  padding: 2.5rem;
+  border-radius: 1rem;
+}
+
+.about-text h3 {
+  font-size: 1.5rem;
+  color: var(--text-color);
+  margin-bottom: 1rem;
+}
+
+.about-text p {
+  color: var(--secondary-color);
+  margin-bottom: 1.5rem;
+}
+
+/* Timeline styles */
+.education-timeline {
+  margin-top: 2rem;
+  position: relative;
+  padding-left: 1.5rem;
+  border-left: 2px solid var(--border-color);
+}
+
+.timeline-item {
+  position: relative;
+  margin-bottom: 1.5rem;
+}
+
+.timeline-dot {
+  position: absolute;
+  left: -1.5rem;
+  top: 0.25rem;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: var(--primary-color);
+  transform: translateX(-50%);
+  border: 2px solid var(--surface-color);
+}
+
+.timeline-content h4 {
+  color: var(--text-color);
+  font-size: 1.125rem;
+  margin-bottom: 0.25rem;
+}
+
+.timeline-date {
+  font-size: 0.875rem;
+  color: var(--primary-color);
+  font-weight: 500;
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+.timeline-content p {
+  font-size: 0.9rem;
+  margin-bottom: 0;
+}
+
+/* Skills */
+.skills-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+}
+
+.skill-card {
+  padding: 1.5rem;
+  border-radius: 1rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.skill-card:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--shadow-md);
+  border-color: var(--primary-color);
+}
+
+.skill-header {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 1rem;
+}
+
+.skill-icon {
+  color: var(--primary-color);
+  display: flex;
+}
+
+.skill-header h3 {
+  font-size: 1.125rem;
+  color: var(--text-color);
+}
+
+.skill-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.skill-tag {
+  background-color: var(--bg-color);
+  color: var(--secondary-color);
+  padding: 0.25rem 0.75rem;
+  border-radius: 1rem;
+  font-size: 0.875rem;
+  border: 1px solid var(--border-color);
+  transition: all 0.2s ease;
+}
+
+.skill-tag:hover {
+  background-color: var(--primary-color);
+  color: #ffffff;
+  border-color: var(--primary-color);
+}
+
+@media (max-width: 992px) {
+  .about-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 576px) {
+  .skills-container {
+    grid-template-columns: 1fr;
+  }
+}
