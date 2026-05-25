@@ -4,8 +4,8 @@
   /* Light Mode Variables */
   --bg-color: #f1f5f9;
   --text-color: #0f172a;
-  --primary-color: #2563eb;
-  --secondary-color: #64748b;
+  --primary-color: #004aad; /* Pure Dark Blue (0% Red, no violet) */
+  --secondary-color: #475569; /* Darkened for better contrast */
   --surface-color: #ffffff;
   --surface-color-glass: #ffffffb3;
   --border-color: #e2e8f0;
@@ -20,7 +20,7 @@
   /* Dark Mode Variables */
   --bg-color: #0f172a;
   --text-color: #f8fafc;
-  --primary-color: #3b82f6;
+  --primary-color: #0077b6; /* Bright Ocean Blue (no violet) */
   --secondary-color: #94a3b8;
   --surface-color: #1e293b;
   --surface-color-glass: #1e293bb3;
@@ -44,6 +44,11 @@ body {
   color: var(--text-color);
   transition: background-color 0.3s ease, color 0.3s ease;
   line-height: 1.6;
+}
+
+main, .app-footer, .navbar {
+  position: relative;
+  z-index: 1;
 }
 
 a {
@@ -75,6 +80,7 @@ button {
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
   border: 1px solid var(--border-color);
+  transition: background-color 0.3s ease, border-color 0.3s ease, background 0.3s ease;
 }
 
 /* Section styling */
@@ -102,7 +108,7 @@ section {
   padding: 3rem 0;
   color: var(--secondary-color);
   border-top: 1px solid var(--border-color);
-  background-color: var(--bg-color);
+  background-color: transparent;
 }
 
 .footer-socials {

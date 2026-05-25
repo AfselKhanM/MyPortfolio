@@ -1,6 +1,8 @@
 import { motion } from 'framer-motion';
 import { ArrowRight, Download, Mail } from 'lucide-react';
 import { FaGithub, FaLinkedin } from 'react-icons/fa';
+import heroImage from '../assets/profile.jpeg';
+import resumePdf from '../assets/resume.pdf';
 import './Hero.css';
 
 const Hero = () => {
@@ -27,20 +29,8 @@ const Hero = () => {
             <a href="#projects" className="btn btn-primary">
               View Projects <ArrowRight size={18} />
             </a>
-            <a href="/resume.pdf" className="btn btn-secondary" download>
+            <a href={resumePdf} className="btn btn-secondary" target="_blank" rel="noopener noreferrer" download="Afsel_Khan_Resume.pdf">
               Resume <Download size={18} />
-            </a>
-          </div>
-
-          <div className="hero-socials">
-            <a href="https://github.com" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
-              <FaGithub size={24} />
-            </a>
-            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
-              <FaLinkedin size={24} />
-            </a>
-            <a href="mailto:contact@example.com" aria-label="Email">
-              <Mail size={24} />
             </a>
           </div>
         </motion.div>
@@ -55,10 +45,7 @@ const Hero = () => {
           <div className="hero-shape shape-1"></div>
           <div className="hero-shape shape-2"></div>
           <div className="hero-image-container glass">
-            {/* Placeholder for actual image */}
-            <div className="hero-image-placeholder">
-              &lt;/&gt;
-            </div>
+            <img src={heroImage} alt="Afsel Khan" className="hero-image" />
           </div>
         </motion.div>
       </div>

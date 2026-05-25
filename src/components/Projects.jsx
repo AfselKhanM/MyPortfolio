@@ -15,11 +15,11 @@ const Projects = () => {
     },
     {
       title: 'IntruderX',
-      description: 'IoT-based smart home intruder detection and alert system',
+      description: 'An IoT-based home intrusion detection system designed to detect unauthorized human motion using a PIR sensor and NodeMCU.',
       image: '/api/placeholder/600/400',
       tags: ['Arduino', 'NodeMCU', 'PIR sensor', 'Telegram bot'],
       github: 'https://github.com/AfselKhanM/IntruderX',
-      demo: '#'
+
     },
     {
       title: 'CarRace-AI',
@@ -27,7 +27,7 @@ const Projects = () => {
       image: '/api/placeholder/600/400',
       tags: ['HTML5', 'JavaScript', 'Canvas', 'CSS'],
       github: 'https://github.com/AfselKhanM/CarRace-AI',
-      demo: '#'
+      demo: 'https://afselkhanm.github.io/CarRace-AI/'
     }
   ];
 
@@ -43,13 +43,14 @@ const Projects = () => {
           {projects.map((project, index) => (
             <motion.div
               key={index}
-              className="project-card glass"
-              initial={{ opacity: 0, y: 50 }}
-              whileInView={{ opacity: 1, y: 0 }}
+              initial={{ opacity: 0 }}
+              whileInView={{ opacity: 1 }}
               viewport={{ once: false, margin: "-50px" }}
               transition={{ duration: 0.6, delay: index * 0.2 }}
+              style={{ height: '100%' }}
             >
-              <div className="project-content">
+              <div className="project-card glass" style={{ height: '100%' }}>
+                <div className="project-content">
                 <h3 className="project-title">{project.title}</h3>
                 <p className="project-description">{project.description}</p>
                 <div className="project-tags">
@@ -61,10 +62,13 @@ const Projects = () => {
                   <a href={project.github} target="_blank" rel="noopener noreferrer" className="project-link" aria-label="GitHub Repository">
                     <FaGithub size={20} /> Code
                   </a>
-                  <a href={project.demo} target="_blank" rel="noopener noreferrer" className="project-link" aria-label="Live Demo">
-                    <ExternalLink size={20} /> Live Demo
-                  </a>
+                  {project.demo && (
+                    <a href={project.demo} target="_blank" rel="noopener noreferrer" className="project-link" aria-label="Live Demo">
+                      <ExternalLink size={20} /> Live Demo
+                    </a>
+                  )}
                 </div>
+              </div>
               </div>
             </motion.div>
           ))}

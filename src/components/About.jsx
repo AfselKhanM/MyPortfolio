@@ -6,8 +6,8 @@ const About = () => {
   const skills = [
     { name: 'Frontend', icon: <Layout size={24} />, items: ['React', 'JavaScript', 'HTML/CSS', 'Tailwind'] },
     { name: 'Backend', icon: <Server size={24} />, items: ['Node.js', 'Express', 'Python', 'Java'] },
-    { name: 'Database', icon: <Database size={24} />, items: ['MongoDB', 'PostgreSQL', 'MySQL'] },
-    { name: 'Tools', icon: <Terminal size={24} />, items: ['Git', 'Docker', 'Linux', 'AWS'] },
+    { name: 'Database', icon: <Database size={24} />, items: ['MongoDB', 'MySQL'] },
+    { name: 'Tools', icon: <Terminal size={24} />, items: ['Git','Linux', 'Burpsuite', 'Wireshark'] },
   ];
 
   return (
