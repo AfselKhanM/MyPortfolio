@@ -58,6 +58,11 @@
   font-weight: 500;
 }
 
+[data-theme='dark'] .project-tag {
+  color: #38bdf8; /* Light sky blue for better contrast in dark mode */
+}
+
+
 .project-links {
   display: flex;
   gap: 1.5rem;
