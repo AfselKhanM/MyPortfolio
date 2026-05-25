@@ -6,8 +6,8 @@
   --text-color: #0f172a;
   --primary-color: #004aad; /* Pure Dark Blue (0% Red, no violet) */
   --secondary-color: #475569; /* Darkened for better contrast */
-  --surface-color: #ffffff;
-  --surface-color-glass: #ffffffb3;
+  --surface-color: #f8fafc;
+  --surface-color-glass: #f8fafcb3;
   --border-color: #e2e8f0;
   --hover-color: #e2e8f0;
   --section-alt-bg: #cbd5e1;
@@ -83,6 +83,13 @@ button {
   transition: background-color 0.3s ease, border-color 0.3s ease, background 0.3s ease;
 }
 
+/* Solid Card utility */
+.solid-card {
+  background: var(--surface-color);
+  border: 1px solid var(--border-color);
+  transition: background-color 0.3s ease, border-color 0.3s ease, background 0.3s ease;
+}
+
 /* Section styling */
 section {
   padding: 5rem 0;
@@ -109,6 +116,10 @@ section {
   color: var(--secondary-color);
   border-top: 1px solid var(--border-color);
   background-color: transparent;
+}
+
+:root:not([data-theme='dark']) .app-footer {
+  color: #ffffff;
 }
 
 .footer-socials {

@@ -20,7 +20,7 @@ const About = () => {
 
         <div className="about-grid">
           <motion.div 
-            className="about-text glass"
+            className="about-text solid-card"
             initial={{ opacity: 0, x: -50 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: false, margin: "-100px" }}
@@ -53,7 +53,7 @@ const About = () => {
             transition={{ duration: 0.8, delay: 0.2 }}
           >
             {skills.map((skillGroup, index) => (
-              <div key={index} className="skill-card glass">
+              <div key={index} className="skill-card solid-card">
                 <div className="skill-header">
                   <span className="skill-icon">{skillGroup.icon}</span>
                   <h3>{skillGroup.name}</h3>

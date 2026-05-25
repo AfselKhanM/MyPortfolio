@@ -49,7 +49,7 @@ const Projects = () => {
               transition={{ duration: 0.6, delay: index * 0.2 }}
               style={{ height: '100%' }}
             >
-              <div className="project-card glass" style={{ height: '100%' }}>
+              <div className="project-card solid-card" style={{ height: '100%' }}>
                 <div className="project-content">
                 <h3 className="project-title">{project.title}</h3>
                 <p className="project-description">{project.description}</p>

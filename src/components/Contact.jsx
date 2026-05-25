@@ -88,7 +88,7 @@ const Contact = () => {
             transition={{ duration: 0.6 }}
             style={{ height: '100%' }}
           >
-            <div className="contact-info glass" style={{ height: '100%' }}>
+            <div className="contact-info solid-card" style={{ height: '100%' }}>
             <h3>Let's Connect</h3>
             <p className="contact-description">
               I'm currently looking for internship opportunities and exciting projects to collaborate on.
@@ -137,7 +137,7 @@ const Contact = () => {
             transition={{ duration: 0.6, delay: 0.2 }}
             style={{ height: '100%' }}
           >
-            <div className="contact-form-container glass" style={{ height: '100%' }}>
+            <div className="contact-form-container solid-card" style={{ height: '100%' }}>
             <form 
               className="contact-form" 
               onSubmit={handleSubmit}
